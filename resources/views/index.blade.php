@@ -7,5 +7,10 @@
 </head>
 <body>
     <p>こんにちは、{{ $name }}さん！</p>
+    <ul>
+        @foreach($languages as $language)
+        <li>{{ $language }}</li>
+        @endforeach
+    </ul>
 </body>
 </html>
