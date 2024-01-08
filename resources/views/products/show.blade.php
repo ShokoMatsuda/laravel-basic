@@ -9,7 +9,23 @@
     <table>
         <tr>
             <th>ID</th>
-            <td></td>
+            <td>{{ $product->product_name }}</td>
+        </tr>
+        <tr>
+            <th>価格</th>
+            <td>{{ $product->created_at }}</td>
+        </tr>
+        <tr>
+            <th>作成日時</th>
+            <td>{{ $product->updated_at }}</td>
+        </tr>
+        <tr>
+            <th>作成日時</th>
+            <td>{{ $product->created_at }}</td>
+        </tr>
+        <tr>
+            <th>更新日時</th>
+            <td>{{ $product->updated_at }}</td>
         </tr>
     </table>
 </body>
