@@ -15,7 +15,7 @@ return new class extends Migration
             //vendor_codeカラムを設定する
             $table->integer('vendor_code')->nullable();
             //vendor_codeカラムに外部キー制約を付与する(参照先はvendorsテーブルのvendor_codeカラムにする)
-            $table->forein('vendor_code')->references('vendor_code')->on('vendors');
+            $table->foreign('vendor_code')->references('vendor_code')->on('vendors');
         });
     }
 

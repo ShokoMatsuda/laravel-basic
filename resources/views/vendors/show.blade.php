@@ -20,10 +20,10 @@
             <td>{{ $product->id }}</td>
             <td>{{ $product->product_name }}</td>
             <td>{{ $product->price }}</td>
-            <td>{{ $product->creatted_at }}</td>
-            <td>{{ $product->updated_at}}</td>
+            <td>{{ $product->created_at }}</td>
+            <td>{{ $product->updated_at }}</td>
+            @endforeach
         </tr>
-        @endforeach
     </table>
 </body>
 </html>
