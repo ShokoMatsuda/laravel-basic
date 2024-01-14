@@ -26,9 +26,9 @@ return new class extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             //ロールバック時にvendor_codeカラムの外部キー制約を削除する
-            $table->dropFreign(['vendor_code']);
+            $table->dropForeign(['vendor_code']);
             //ロールバック時にvendor_codeカラムを削除する
-            $table->droopColumn('vendor_code');
+            $table->dropColumn('vendor_code');
         });
     }
 };
