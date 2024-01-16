@@ -28,5 +28,22 @@ class RequestController extends Controller
         //HTTPリクエストのURLを取得する
         $url = $request->url();
 
+        //HTTPリクエストを送信したクライアントのIPアドレスを取得する
+        $ip = $request->ip();
+
+        $variables = [
+            'user_name',
+            'user_email',
+            'user_gender',
+            'category',
+            'message',
+            'method',
+            'path',
+            'url',
+            'ip'
+        ];
+
+        return view('requests.confirm', compact($variables));
+
     }
 }
