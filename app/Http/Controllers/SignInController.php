@@ -19,7 +19,7 @@ class SignInController extends Controller
         $password = $request->input('password');
 
         //メールアドレスとパスワードに一致するデータがusersテーブルに存在すればtrue、存在しなければfalse
-        $user_exists = User::whereRaw("email = '${email}'")->whereRaw("password = '${password}")->exists();
+        $user_exists = User::whereRaw("email = '${email}'")->whereRaw("password = '${password}'")->exists();
 
         //クエリの結果に応じて文字列をHTTPレスポンスとして生成して返す
         if ($user_exists) {
