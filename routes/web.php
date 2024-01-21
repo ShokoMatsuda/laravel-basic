@@ -65,4 +65,4 @@ Route::get('/sessions/create', [SessionController::class, 'create'])->name('sess
 
 Route::post('/sessions/store', [SessionController::class, 'store'])->name('sessions.store');
 
-Route::delete('/sessions/destroy', [SessionContoller::class, 'destroy'])->name('sessions.destroy');
+Route::delete('/sessions/destroy', [SessionController::class, 'destroy'])->name('sessions.destroy');
