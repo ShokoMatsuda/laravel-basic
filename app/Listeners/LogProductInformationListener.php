@@ -5,7 +5,7 @@ namespace App\Listeners;
 use App\Events\ProductAddedEvent;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Support\Facadese\Log;
+use Illuminate\Support\Facades\Log;
 
 class LogProductInformationListener
 {
